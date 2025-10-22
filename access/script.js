@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function forceAutoplay() {
     try {
       await audio.play();
-      console.log("Autoplay thành công");
     } catch (e) {
-      console.warn("Autoplay bị chặn, sẽ thử lại khi người dùng tương tác.");
     }
   }
 

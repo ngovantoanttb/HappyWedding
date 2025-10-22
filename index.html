@@ -19,7 +19,8 @@
     <meta property="og:url" content="https://namchi-wedding.vercel.app/">
     <meta property="og:description"
         content="Thiệp cưới online của Phí Ngọc Nam và Bùi Thị Kim Chi. Cùng chung vui với chúng tôi trong ngày đặc biệt này!">
-    <meta property="og:image" content="https://sf-static.upanhlaylink.com/img/image_202510205f660e7c1e6714e302fbb4d6024d4224.jpg">
+    <meta property="og:image"
+        content="https://sf-static.upanhlaylink.com/img/image_202510205f660e7c1e6714e302fbb4d6024d4224.jpg">
     <meta property="fb:app_id" content="1259764014464409" />
     <!-- 🔸Phải là link ảnh tuyệt đối (full URL) -->
     <meta property="og:image:width" content="1200">
@@ -637,8 +638,9 @@
     </div>
 
     <section class="ldp-footer">
-        <div class="ldp-footer-line" style="cursor: pointer;" onclick="window.scrollTo({ top: 0, behavior: 'smooth'});">
-            <span style="opacity: 0.7;">@ngovantoanttb - Thiệp cưới online</span>
+        <div class="ldp-footer-line" style="cursor: pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth'}); alert('Liên hệ tạo thiệp cưới qua email: nvtoan.contact@gmail.com. Nhấn OK để chuyển sang trang liên hệ.')">
+            <a style="color: white; opacity: 0.7;" href="https://ngovantoanttb-contact.netlify.app/">@ngovantoanttb -
+                Tạo thiệp cưới Online</a>
         </div>
     </section>
     <template id="tp-language" data-tp-language="vi"></template>
@@ -653,6 +655,8 @@
         const selectList = document.querySelector(".wd-attend-form-select");
         const selectItems = document.querySelectorAll(".wd-attend-form-select-item");
         const inputRole = document.getElementById("guest-role");
+        const content = "Liên hệ tạo thiệp cưới qua email: nvtoan.contact@gmail.com."
+        console.warn(content)
 
         selected.addEventListener("click", () => {
             selectList.style.display = selectList.style.display === "block" ? "none" : "block";
